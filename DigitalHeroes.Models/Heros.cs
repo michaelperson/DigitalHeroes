@@ -2,42 +2,15 @@
 
 namespace DigitalHeroes.Models
 {
-    public class Heros
-    {
-        private string _nom;
-        private string _prenom;
-        private string _nomSuperHero;
-        private DateOnly _dateDeNaissance;
+    public class Heros :Personnage
+    { 
+        private string _nomSuperHero; 
         private DateOnly _dateTransformation;
         private string _circonstances;
         private List<string> _pointsFaibles;
         private int _force;
 
-        public string Nom
-        {
-            get
-            {
-                return _nom;
-            }
-
-            set
-            {
-                _nom = value;
-            }
-        }
-
-        public string Prenom
-        {
-            get
-            {
-                return _prenom;
-            }
-
-            set
-            {
-                _prenom = value;
-            }
-        }
+        
 
         public string NomSuperHero
         {
@@ -51,19 +24,7 @@ namespace DigitalHeroes.Models
                 _nomSuperHero = value;
             }
         }
-
-        public DateOnly DateDeNaissance
-        {
-            get
-            {
-                return _dateDeNaissance;
-            }
-
-            set
-            {
-                _dateDeNaissance = value;
-            }
-        }
+                
 
         public DateOnly DateTransformation
         {
